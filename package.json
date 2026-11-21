@@ -1,0 +1,17 @@
+{
+  "name": "restaurant-text-list",
+  "version": "1.0.0",
+  "description": "QR code on every table -> the restaurant's own customer text list -> Claude writes one text for a slow night.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs",
+    "qr": "node scripts/qr.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.12.0",
+    "qrcode": "^1.5.4"
+  }
+}
